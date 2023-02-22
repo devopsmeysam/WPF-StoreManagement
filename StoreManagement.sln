@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfStoreManagement", "WpfStoreManagement\WpfStoreManagement.csproj", "{E432D872-3166-44AD-A723-45B347FE789A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{082B2FF2-9899-4E28-A140-932108D0D288}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E432D872-3166-44AD-A723-45B347FE789A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E432D872-3166-44AD-A723-45B347FE789A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E432D872-3166-44AD-A723-45B347FE789A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082B2FF2-9899-4E28-A140-932108D0D288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082B2FF2-9899-4E28-A140-932108D0D288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082B2FF2-9899-4E28-A140-932108D0D288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082B2FF2-9899-4E28-A140-932108D0D288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
