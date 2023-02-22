@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfStoreManagement"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Tanin Store Management System" Height="700" Width="1200">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Margin="2,4,2,4" Background="WhiteSmoke" Width="250" HorizontalAlignment="Center" BorderThickness="3" BorderBrush="Gray">
+            <StackPanel>
+                <Button Name="btnHome" Margin="20,30" Background="#000066" Height="50" Foreground="#ffff00" FontSize="22" FontFamily="Arial" FontWeight="Bold">HOME</Button>
+                <Button Name="btnEmployees" Margin="20,30" Background="#000066" Height="50" Foreground="#ffff00" FontSize="22" FontFamily="Arial" FontWeight="Bold">EMPLOYEES</Button>
+                <Button Name="btnCustomers" Margin="20,30" Background="#000066" Height="50" Foreground="#ffff00" FontSize="22" FontFamily="Arial" FontWeight="Bold">CUSTOMERS</Button>
+                <Button Name="btnProducts" Margin="20,30" Background="#000066" Height="50" Foreground="#ffff00" FontSize="22" FontFamily="Arial" FontWeight="Bold">PRODUCTS</Button>
+                <Image Margin="10,40" Height="150" Width="150" Source="Resources/Meysam.jpg"/>
+            </StackPanel>
+
+
+        </Border>
+        <Border Name="HomePanel" Grid.Column="1" Margin="2,4,2,4" Background="WhiteSmoke" HorizontalAlignment="Stretch" BorderThickness="3" BorderBrush="Gray">
+            <StackPanel HorizontalAlignment="Stretch">
+                <Label FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" FontFamily="Arial" FontStyle="Italic" Margin="0,50,0,0">Welcome to Store Management Application</Label>
+                <Image Source="Resources/Store03.png"></Image>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
