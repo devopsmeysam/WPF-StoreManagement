@@ -6,7 +6,29 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Models
 {
-    internal class Customer
+    public class Customer : IPerson
     {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public ulong PhoneNumber { get; set; }
+        public string Address { get; set; }
+        public Membership Membership { get; set; }
+
+        public string GetBasicInfo()
+        {
+            string finalStr = FirstName + " " + LastName +
+                "\nCellphone: " + PhoneNumber +
+                "\nAddress: " + Address +
+                "\nMembership: " + Membership;
+
+            return finalStr;
+        }
+    }
+    public enum Membership
+    {
+        Platinum,
+        Gold,
+        Silver
     }
 }
